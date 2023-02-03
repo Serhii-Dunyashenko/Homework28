@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider_img {
+    display: flex;
+    width: 100%;
+}
+.slider {
+    width: 720px;  
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 15px 15px;
+}
+.button {
+    height: 100%;
+    position: absolute;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.327);
+}
+.button:hover {
+    background-color: rgb(156, 156, 156);
+}
+.button.next {
+    right: 0px;
+}
+.button.previous {
+    left: 0px;
+    display: none;
+}
+.fade {  
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
